@@ -14,12 +14,15 @@ public class GenerateSubsets6 {
 		generatesubets(s,"",0);
 
 	}
-	public static void generatesubets(String s,String subset,int count) {
-		if(count==s.length()) {System.out.println(subset);return;}
-		generatesubets(s,subset,count+1);
-		generatesubets(s,subset+s.charAt(count),count+1);
+	public static void generatesubets(String s,String curr, int i ) {
+		
+		if(i==s.length()) {
+			System.out.print(curr+" ");
+			return;
+		}
+		generatesubets(s,curr,i+1);
+		generatesubets(s,curr+s.charAt(i),i+1);
 		
 	}
-	/**/
 
 }
