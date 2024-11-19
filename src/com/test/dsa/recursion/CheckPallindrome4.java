@@ -9,7 +9,7 @@ package com.test.dsa.recursion;
  * I/P s="geeks"
  * O/P : No
  * */
-public class CheckPallindrome {
+public class CheckPallindrome4 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

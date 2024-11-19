@@ -51,5 +51,7 @@ public class FrequenciesInSortedArray11 {
 			System.out.println("Frequency of "+ arr[n-1]+ " is : "+1);
 		}
 	}
+	
+	//what if the array is not sorted?
 }
 
