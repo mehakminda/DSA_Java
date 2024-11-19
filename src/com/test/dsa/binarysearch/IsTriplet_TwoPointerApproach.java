@@ -26,6 +26,7 @@ public class IsTriplet_TwoPointerApproach {
 		int x2=14;
 		System.out.println("Is a triplet possible(Method1) : "+isTriplet_Method1(arr2, x2));
 		System.out.println("Is a triplet possible(Method2) : "+isTriplet_Method2(arr2, x2));
+		System.out.println("Is a triplet possible(Method3) : "+isTriplet_Method3(arr2, x2));
 
 
 	}
@@ -68,8 +69,22 @@ public class IsTriplet_TwoPointerApproach {
 		int j=1;
 		int k=arr.length-1;
 		for( int i=0;i<arr.length-2;i++) {
-			if(IsPair_TwoPointerApproach.isPair_Method2(arr, x-arr[i]));
+			if(isPair(arr, x-arr[i],i+1)) {
+				return true;
 			}
+		}
+		return false;
+	}
+	public static boolean isPair(int arr[],int x, int start) {
+		int i=start;
+		int j=arr.length-1;
+		while(i<j) {
+			if (arr[i]+arr[j]>x) j--;
+			else if (arr[i]+arr[j]<x) i++;	
+			else {
+				System.out.println("The pair are: ("+ arr[i]+","+arr[j]+") for sum "+x);
+				return true;
+				}	
 		}
 		return false;
 	}
