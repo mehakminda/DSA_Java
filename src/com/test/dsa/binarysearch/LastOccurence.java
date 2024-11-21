@@ -27,11 +27,11 @@ public class LastOccurence {
 	}
 	
 	public static int lastOccurenceIterative(int arr[],int x) {
-		int low=0;int high=arr.length;
-		int mid=(low+high)/2;
+		int low=0;int high=arr.length-1;
 		while(low<=high) {
+			int mid=(low+high)/2;
 			if(arr[mid]==x) {
-				if(mid==arr.length || arr[mid+1]!=arr[mid]) return mid;
+				if(mid==arr.length-1 || arr[mid+1]!=arr[mid]) return mid;
 				else  low=mid+1;
 			}
 			else if(arr[mid]>x)  high=mid-1;

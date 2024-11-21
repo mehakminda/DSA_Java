@@ -12,10 +12,24 @@ package com.test.dsa.stringsPrac;
  * */
 
 
-public class Anagram {
+public class Anagram4 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		String s1="listen";
+		String s2="silent";
+
+
+	}
+	//O(n) time and O(1) space
+	public static boolean isAnagram_Method1(String s) {
+		return false;
+
+	}
+
+	//O(n) time and O(1) space
+	public static boolean isAnagram_Method2(String s) {
+		return false;
 
 	}
 
