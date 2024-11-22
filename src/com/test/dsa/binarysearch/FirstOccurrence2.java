@@ -10,7 +10,7 @@ package com.test.dsa.binarysearch;
  * 
  * */
 
-public class FirstOccurrence {
+public class FirstOccurrence2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

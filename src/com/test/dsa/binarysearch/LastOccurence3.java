@@ -9,7 +9,7 @@ package com.test.dsa.binarysearch;
  * 
  * */
 
-public class LastOccurence {
+public class LastOccurence3 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

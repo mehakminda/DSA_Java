@@ -9,7 +9,7 @@ package com.test.dsa.binarysearch;
  * 
  * */
 
-public class CountOccurence {
+public class CountOccurence4 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -23,8 +23,8 @@ public class CountOccurence {
 	}
 
 	public static int  countOccurrence_Method1(int arr[],int x) {
-		int firstOccurence=FirstOccurrence.firOccurrenceRecursive(arr, 0, arr.length-1, x);
-		int lastOccurence=LastOccurence.lastOccurenceRecursive(arr, 0, arr.length, x);
+		int firstOccurence=FirstOccurrence2.firOccurrenceRecursive(arr, 0, arr.length-1, x);
+		int lastOccurence=LastOccurence3.lastOccurenceRecursive(arr, 0, arr.length, x);
 		if(firstOccurence== -1 || lastOccurence==-1) return -1;
 		else return lastOccurence-firstOccurence+1;
 		
