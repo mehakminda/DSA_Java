@@ -5,9 +5,9 @@ public class ImplementationLL1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		Node head=new Node(10);
-		Node temp1=new Node(30);
-		Node temp2=new Node(20);
+		NodeSLL head=new NodeSLL(10);
+		NodeSLL temp1=new NodeSLL(30);
+		NodeSLL temp2=new NodeSLL(20);
 		head.next=temp1;
 		temp1.next=temp2; //head.next.next=temp2;
 		traversal_SLL_Iterative(head);
@@ -15,17 +15,17 @@ public class ImplementationLL1 {
 		traversal_SLL_Recursive(head);
 	}
 	
-	////O(n) time and O(1) space
-	public static void traversal_SLL_Iterative(Node head) {
-		Node temp=head;
+	//O(n) time and O(1) space
+	public static void traversal_SLL_Iterative(NodeSLL head) {
+		NodeSLL temp=head;
 		while(temp!=null) {
 			System.out.print(temp.data+" ");
 			temp=temp.next;
 		}
 	}
 	
-	////O(n) time and O(n) space
-	public static void traversal_SLL_Recursive(Node head) {
+	//O(n) time and O(n) space
+	public static void traversal_SLL_Recursive(NodeSLL head) {
 		if(head==null) return ;
 		else {
 			System.out.print(head.data+" ");
@@ -35,10 +35,10 @@ public class ImplementationLL1 {
 	}
 }
 
- class  Node{
+ class  NodeSLL{
 	int data;
-	Node next;
-	Node(int data){
+	NodeSLL next;
+	NodeSLL(int data){
 		this.data=data;
 		this.next=null;
 	}

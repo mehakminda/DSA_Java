@@ -1,13 +1,13 @@
 package com.test.dsa.linkedlist;
 
-public class InsertionAtBeginningLL3 {
+public class InsertionLL3 {
 
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
 		System.out.println("Create a linked list by inserting elements at the beginning");
-		Node head=null;
+		NodeSLL head=null;
 		head=InsertBegin(head, 20);
 		head=InsertBegin(head, 30);
 		head=InsertBegin(head, 10);
@@ -46,16 +46,18 @@ public class InsertionAtBeginningLL3 {
 
 	}
 	
-	public static Node InsertBegin(Node head, int data) {
-		Node temp=new Node(data);
+	//O(1) time and O(1) space
+	public static NodeSLL InsertBegin(NodeSLL head, int data) {
+		NodeSLL temp=new NodeSLL(data);
 		temp.next=head;
 		head=temp;
 		return head;
 	}
 	
-	public static Node InsertEnd(Node head, int data) {
-		Node temp=new Node(data);
-		Node curr=head;
+	//O(n) time and O(1) space
+	public static NodeSLL InsertEnd(NodeSLL head, int data) {
+		NodeSLL temp=new NodeSLL(data);
+		NodeSLL curr=head;
 		if(curr==null) {
 			return temp;
 		}
@@ -67,13 +69,14 @@ public class InsertionAtBeginningLL3 {
 		
 	}
 	
-	public static Node InsertPosition(Node head, int data, int position) {
-		Node temp=new Node(data);
+	//O(n) time and O(1) space
+	public static NodeSLL InsertPosition(NodeSLL head, int data, int position) {
+		NodeSLL temp=new NodeSLL(data);
 		if(position==1) {
 			temp.next=head;
 			return temp;
 		}
-		Node curr=head;
+		NodeSLL curr=head;
 		for(int i=1;i<=position-2 && curr!=null ;i++) {
 			curr=curr.next;
 		}

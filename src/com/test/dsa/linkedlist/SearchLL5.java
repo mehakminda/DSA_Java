@@ -7,10 +7,10 @@ public class SearchLL5 {
 		
 		
 		
-		Node head=new Node(10);
-		Node temp1=new Node(30);
-		Node temp2=new Node(20);
-		Node temp3=new Node(40);
+		NodeSLL head=new NodeSLL(10);
+		NodeSLL temp1=new NodeSLL(30);
+		NodeSLL temp2=new NodeSLL(20);
+		NodeSLL temp3=new NodeSLL(40);
 		head.next=temp1;
 		temp1.next=temp2; //head.next.next=temp2;
 		temp2.next=temp3;
@@ -44,7 +44,9 @@ public class SearchLL5 {
 
 
 	}
-	public static int SearchLLIterative(Node head, int x) {
+	
+	//O(n) time and O(1) space
+	public static int SearchLLIterative(NodeSLL head, int x) {
 		int pos=1;
 		while(head!=null) {
 			if(head.data==x) {
@@ -58,7 +60,8 @@ public class SearchLL5 {
 		return -1;
 	}
 	
-	public static int SearchLLRecursive(Node head, int x , int pos) {
+	//O(n) time and O(n) space
+	public static int SearchLLRecursive(NodeSLL head, int x , int pos) {
 		if(head==null) return -1;
 		if(head.data==x) return pos;
 		else return SearchLLRecursive(head.next,x,pos+1);

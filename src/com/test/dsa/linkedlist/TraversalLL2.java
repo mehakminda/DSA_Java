@@ -4,7 +4,7 @@ public class TraversalLL2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Node head=null;
+		NodeSLL head=null;
 		head=InsertEnd(head, 20);
 		head=InsertEnd(head, 20);
 		head=InsertEnd(head, 20);
@@ -19,7 +19,7 @@ public class TraversalLL2 {
 	//insert in beginning
 	//insert at end
 	//insert at a given position x;
-	public static Node InsertEnd(Node head, int data) {
+	public static NodeSLL InsertEnd(NodeSLL head, int data) {
 		return head;
 	}
 	
