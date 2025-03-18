@@ -1,6 +1,7 @@
 package com.test.dsa.array;
 
 /**
+ * Programming patshala
  * Given an array, find the max water that can be trapped
  * arr[]: [0,1,0,2,1,3,0,2]
  * O/P: 4
