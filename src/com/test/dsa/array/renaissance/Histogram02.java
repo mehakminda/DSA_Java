@@ -1,7 +1,7 @@
 package com.test.dsa.array.renaissance;
 
 /**
- * Gievn an array where each element represents heights of 'N' pillars in a row. Find the total height of water trapped in rain.
+ * Given an array where each element represents heights of 'N' pillars in a row. Find the total height of water trapped in rain.
  * 
  * 
  * arr=[0,1,0,2,1,3,0,2]
@@ -22,8 +22,8 @@ public class Histogram02 {
 		// TODO Auto-generated method stub
 		int arr[]= {0,1,0,2,1,3,0,2};
 		
-		int prefix_max[]=;
-		int suffix_max[]=;
+		int prefix_max[]=PreCompuatationTechniques01.prefixMax(arr);
+		int suffix_max[]=PreCompuatationTechniques01.suffixMax(arr);
 		
 		for(int i=1;i<arr.length-1;i++) {
 			
