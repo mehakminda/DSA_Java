@@ -38,8 +38,8 @@ public class MaxDifferenceInArray10 {
 	/*
 	 * Naive Approach : We use two loops in this approach. The outer loop runs from 0 to size – 1 and 
 	 * one by one picks all elements from left to right. The inner loop compares the picked element 
-	 * to all the elements on its right side. If the picked element is greater than all the elements 
-	 * to its right side, then the picked element is the leader. 
+	 * to all the elements on its right side. If the picked element and current elements difference is
+	 * greater than previous greater, update with new value.
 	 */
 	//O(n*n) time and O(1) space
 	public static void MaxDiff_Method1(int arr[]) {

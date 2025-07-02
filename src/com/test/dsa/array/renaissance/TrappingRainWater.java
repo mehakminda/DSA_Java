@@ -1,4 +1,4 @@
-package com.test.dsa.array;
+package com.test.dsa.array.renaissance;
 
 public class TrappingRainWater {
 

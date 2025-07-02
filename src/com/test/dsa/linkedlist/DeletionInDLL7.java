@@ -5,7 +5,7 @@ public class DeletionInDLL7 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		// TODO Auto-generated method stub
-		NodeDLL head= new NodeDLL(10);
+		/*NodeDLL head= new NodeDLL(10);
 		NodeDLL temp1=new NodeDLL(30);
 		NodeDLL temp2=new NodeDLL(20);
 
@@ -98,7 +98,7 @@ public class DeletionInDLL7 {
 			curr=curr.next;
 		}
 		curr.next=null;
-		return head;
+		return head;*/
 		
 	}
 
